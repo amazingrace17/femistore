@@ -2,14 +2,15 @@ import React from 'react'
 import { Link } from "react-router-dom";
 import {  ShoppingCart } from "phosphor-react";
 import "./navbar.css";
+import { Container } from 'react-bootstrap';
 
 
 
 export const Navbar = () => {
 
   return (
-    <div className="navbar">
-      <div className="links">
+    <Container fluid className="navbar">
+      <div className="links container-fluid">
       
   
         <Link to="/shop"> Shop </Link>
@@ -26,6 +27,6 @@ export const Navbar = () => {
       {/* <button onClick={handleStartCheckout(console.log("Timer started"))}>Start Shopping</button>
       <button onClick={(handleCompleteCheckout) (console.log("Timer stopped"))}>Complete Checkout</button> */}
      
-    </div>
+    </Container>
   );
 };

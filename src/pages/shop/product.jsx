@@ -8,14 +8,14 @@ export const Product = (props) => {
   const cartItemCount = cartItems[id];
 
   return (
-    <div className="product">
+    <div className="product container-fluid">
       <img src={productImage} alt='product'/>
       <div className="description">
         <p>
           <b>{productName}</b>
         </p>
         <p> ${price}</p>
-        <p>  Remaining Items :{remaining}</p>
+        <p className="remaining" >  Remaining Items :{remaining}</p>
         <form action="/action_page.php">
         
         </form> 

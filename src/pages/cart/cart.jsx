@@ -79,7 +79,7 @@ alert("Registration failed")
     <div className="cart">
       <div>
         <h1>Your Cart Items </h1>
-        <p>Elapsed Time: {timeTaken}</p>
+       
       </div>
       <div className="cart"> 
         {PRODUCTS.map((product) => {
@@ -101,7 +101,7 @@ alert("Registration failed")
           <button onClick={() => navigate("/shop")}> Continue Shopping </button>
          
            
-          <button onClick={() => navigate("/shop")}> Checkout</button>
+          {/* <button onClick={() => navigate("/shop")}> Checkout</button> */}
           <br/>
          <input
               type="checkbox"
@@ -111,13 +111,7 @@ alert("Registration failed")
               checked={isChecked}
               onChange={handleCheckboxChange}
             /> Add laptop cover
- 
-        </div>
-          
-      ) : (
-        <h1> Your Shopping Cart is Empty</h1>
-      )}
-  <Button variant="outline-light"
+   <button variant="outline-light"
           onClick={() => {
             submitHandler();
            handleStop()
@@ -129,7 +123,13 @@ alert("Registration failed")
           {" "}
           Checkout{" "}
         
-          </Button>{' '}
+          </button>
+        </div>
+          
+      ) : (
+        <h1> Your Shopping Cart is Empty</h1>
+      )}
+
           <Modal
         show={show}
         onHide={handleClose}

@@ -19,7 +19,7 @@ export const Shop = () => {
   return (
     <><div className="shop">
       <div className="shopTitle">
-        <h1>FemTech Shop</h1>
+        <h1>FemTech Store</h1>
        
       </div>
       {/* <Timer /> */}
@@ -32,7 +32,7 @@ export const Shop = () => {
          <button  class="btn-bg btn-primary m-3 "  onClick={() => {
            
            navigate("/cart");
-         }}> GO TO CHECKOUT</button>
+         }}> GO TO CART</button>
     </div>
       </div>
    

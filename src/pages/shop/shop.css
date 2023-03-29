@@ -10,7 +10,9 @@
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
 }
-
+.remaining{
+  color :red;
+}
 .product {
   border-radius: 15px;
   width: 300px;
