@@ -100,18 +100,7 @@ alert("Registration failed")
           {/* <p> Subtotal: ${cartItems} </p> */}
           <button onClick={() => navigate("/shop")}> Continue Shopping </button>
          
-           
-          {/* <button onClick={() => navigate("/shop")}> Checkout</button> */}
-          <br/>
-         <input
-              type="checkbox"
-              name="gender"
-              value="male"
-             defaultChecked={isChecked}
-              checked={isChecked}
-              onChange={handleCheckboxChange}
-            /> Add laptop cover
-   <button variant="outline-light"
+          <button variant="outline-light"
           onClick={() => {
             submitHandler();
            handleStop()
@@ -124,6 +113,17 @@ alert("Registration failed")
           Checkout{" "}
         
           </button>
+    
+          <br/>
+         <input
+              type="checkbox"
+              name="gender"
+              value="male"
+             defaultChecked={isChecked}
+              checked={isChecked}
+              onChange={handleCheckboxChange}
+            /> Add laptop cover
+  
         </div>
           
       ) : (
